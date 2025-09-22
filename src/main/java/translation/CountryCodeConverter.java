@@ -57,18 +57,21 @@ public class CountryCodeConverter {
      * @return the name of the country corresponding to the code
      */
     public String fromCountryCode(String code) {
+
         code = countryCodeToCountry.get(code.toUpperCase());
         return code;
-    }
 
+    }
     /**
      * Return the code of the country for the given country name.
      * @param country the name of the country
      * @return the 3-letter code of the country
      */
     public String fromCountry(String country) {
+
         country = countryToCountryCode.get(country);
         return country;
+
     }
 
     /**
@@ -76,6 +79,6 @@ public class CountryCodeConverter {
      * @return how many countries are included in this country code converter.
      */
     public int getNumCountries() {
-        return countryCodeToCountry.size();
+        return countryToCountryCode.size();
     }
 }

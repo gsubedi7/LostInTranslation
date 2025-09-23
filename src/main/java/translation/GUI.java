@@ -102,7 +102,6 @@ public class GUI {
         return names;
     }
 
-    /** 更新翻译 */
     private static void updateTranslation() {
         String targetLanguageName = (String) languageComboBox.getSelectedItem();
         String targetCountryName = countryList.getSelectedValue();
